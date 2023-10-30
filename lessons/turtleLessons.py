@@ -91,12 +91,11 @@
 
 
 
-## HİRST PAİNTİNG PROJECT ##
 
 
-
+###########################
 
 #sreens is always open in the bottom 
-screen=Screen()
-screen.exitonclick()
+# screen=Screen()
+# screen.exitonclick()
 
