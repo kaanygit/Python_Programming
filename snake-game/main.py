@@ -38,15 +38,14 @@ while game_is_on:
         
     ## Duvarla etkilesime girmek game over
     if(snake.head.xcor()>280 or snake.head.xcor()<-280 or snake.head.ycor()>280 or snake.head.ycor()<-280):
-        print("GAME OVER")
-        game_is_on=False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
         
     ## Kendi kuyruğu ile etkilesime girmek
     for segment in snake.segments[1:]:
         if snake.head.distance(segment)<10:
-            game_is_on=False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.reset()
 
 
 
